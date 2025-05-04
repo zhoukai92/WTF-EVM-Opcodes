@@ -46,7 +46,7 @@ def return_op(self):
     if len(self.memory) < mem_offset + length:
         self.memory.extend([0] * (mem_offset + length - len(self.memory)))
 
-    self.returnData = self.memory[offset:offset + length]      
+    self.returnData = self.memory[mem_offset:mem_offset + length]      
 ```
 
 ### 2. RETURNDATASIZE
